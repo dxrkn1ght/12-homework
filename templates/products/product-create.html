@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}Mahsulot Qo'shish{% endblock %}
+
+{% block content %}
+    <div class="container mt-4 flex-grow-1">
+    <h1>Yangi Mahsulot Qo'shish</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="productName" class="form-label">Mahsulot nomi</label>
+            <input type="text" class="form-control" id="productName" name="title" required>
+        </div>
+        <div class="mb-3">
+            <label for="productDescription" class="form-label">Qisqa tavsifi</label>
+            <textarea class="form-control" id="productDescription" rows="3" name="short_content" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="productDescription_2" class="form-label">To'liq tavsifi</label>
+            <textarea class="form-control" id="productDescription_2" rows="3" name="long_content" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="productPrice" class="form-label">Narxi</label>
+            <input type="number" class="form-control" id="productPrice" name="price" required>
+        </div>
+        <div class="mb-3">
+            <label for="productImage" class="form-label">Mahsulot rasmi</label>
+            <input type="file" class="form-control" id="productImage" name="image" accept="image/*" required>
+        </div>
+        <div class="mb-3">
+            <label for="productCategory" class="form-label">Kategoriya</label>
+            <select class="form-select" id="productCategory" name="category" required>
+                <option value="">Kategoriyani tanlang</option>
+                <option value="1">Elektronika</option>
+                <option value="2">Kiyim-kechak</option>
+                <option value="3">Oziq-ovqat</option>
+                <option value="4">Uy-ro'zg'or buyumlari</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Mahsulotni qo'shish</button>
+    </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title%}Mahsulotlar Ro'yxati{% end block %}
+
+{% block content %}
+    <div class="container mt-4 flex-grow-1">
+        <h1>Mahsulotlar Ro'yxati</h1>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" class="card-img-top" alt="Mahsulot 2">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.title }}</h5>
+                        <p class="card-text">{{ product.short_content }}</p>
+                        <a href="products/product-detail.html" class="btn btn-primary">Batafsil</a>
+                    </div>
+                </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" class="card-img-top" alt="Mahsulot 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Mahsulot 1</h5>
+                        <p class="card-text">Mahsulot 1 haqida qisqacha ma'lumot.</p>
+                        <a href="products/product-detail.html" class="btn btn-primary">Batafsil</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" class="card-img-top" alt="Mahsulot 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Mahsulot 2</h5>
+                        <p class="card-text">Mahsulot 2 haqida qisqacha ma'lumot.</p>
+                        <a href="product-detail.html" class="btn btn-primary">Batafsil</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" class="card-img-top" alt="Mahsulot 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Mahsulot 3</h5>
+                        <p class="card-text">Mahsulot 3 haqida qisqacha ma'lumot.</p>
+                        <a href="products/product-detail.html" class="btn btn-primary">Batafsil</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
